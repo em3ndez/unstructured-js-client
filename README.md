@@ -9,22 +9,14 @@
     <a href="https://speakeasyapi.dev/"><img src="https://custom-icon-badges.demolab.com/badge/-Built%20By%20Speakeasy-212015?style=for-the-badge&logoColor=FBE331&logo=speakeasy&labelColor=545454" /></a>
 </div>
 
-<div align="center">
-
- <a
-   href="https://www.phorm.ai/query?projectId=34efc517-2201-4376-af43-40c4b9da3dc5">
-	<img src="https://img.shields.io/badge/Phorm-Ask_AI-%23F2777A.svg?&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik00LjQzIDEuODgyYTEuNDQgMS40NCAwIDAgMS0uMDk4LjQyNmMtLjA1LjEyMy0uMTE1LjIzLS4xOTIuMzIyLS4wNzUuMDktLjE2LjE2NS0uMjU1LjIyNmExLjM1MyAxLjM1MyAwIDAgMS0uNTk1LjIxMmMtLjA5OS4wMTItLjE5Mi4wMTQtLjI3OS4wMDZsLTEuNTkzLS4xNHYtLjQwNmgxLjY1OGMuMDkuMDAxLjE3LS4xNjkuMjQ2LS4xOTFhLjYwMy42MDMgMCAwIDAgLjItLjEwNi41MjkuNTI5IDAgMCAwIC4xMzgtLjE3LjY1NC42NTQgMCAwIDAgLjA2NS0uMjRsLjAyOC0uMzJhLjkzLjkzIDAgMCAwLS4wMzYtLjI0OS41NjcuNTY3IDAgMCAwLS4xMDMtLjIuNTAyLjUwMiAwIDAgMC0uMTY4LS4xMzguNjA4LjYwOCAwIDAgMC0uMjQtLjA2N0wyLjQzNy43MjkgMS42MjUuNjcxYS4zMjIuMzIyIDAgMCAwLS4yMzIuMDU4LjM3NS4zNzUgMCAwIDAtLjExNi4yMzJsLS4xMTYgMS40NS0uMDU4LjY5Ny0uMDU4Ljc1NEwuNzA1IDRsLS4zNTctLjA3OUwuNjAyLjkwNkMuNjE3LjcyNi42NjMuNTc0LjczOS40NTRhLjk1OC45NTggMCAwIDEgLjI3NC0uMjg1Ljk3MS45NzEgMCAwIDEgLjMzNy0uMTRjLjExOS0uMDI2LjIyNy0uMDM0LjMyNS0uMDI2TDMuMjMyLjE2Yy4xNTkuMDE0LjMzNi4wMy40NTkuMDgyYTEuMTczIDEuMTczIDAgMCAxIC41NDUuNDQ3Yy4wNi4wOTQuMTA5LjE5Mi4xNDQuMjkzYTEuMzkyIDEuMzkyIDAgMCAxIC4wNzguNThsLS4wMjkuMzJaIiBmaWxsPSIjRjI3NzdBIi8+CiAgPHBhdGggZD0iTTQuMDgyIDIuMDA3YTEuNDU1IDEuNDU1IDAgMCAxLS4wOTguNDI3Yy0uMDUuMTI0LS4xMTQuMjMyLS4xOTIuMzI0YTEuMTMgMS4xMyAwIDAgMS0uMjU0LjIyNyAxLjM1MyAxLjM1MyAwIDAgMS0uNTk1LjIxNGMtLjEuMDEyLS4xOTMuMDE0LS4yOC4wMDZsLTEuNTYtLjEwOC4wMzQtLjQwNi4wMy0uMzQ4IDEuNTU5LjE1NGMuMDkgMCAuMTczLS4wMS4yNDgtLjAzM2EuNjAzLjYwMyAwIDAgMCAuMi0uMTA2LjUzMi41MzIgMCAwIDAgLjEzOS0uMTcyLjY2LjY2IDAgMCAwIC4wNjQtLjI0MWwuMDI5LS4zMjFhLjk0Ljk0IDAgMCAwLS4wMzYtLjI1LjU3LjU3IDAgMCAwLS4xMDMtLjIwMi41MDIuNTAyIDAgMCAwLS4xNjgtLjEzOC42MDUuNjA1IDAgMCAwLS4yNC0uMDY3TDEuMjczLjgyN2MtLjA5NC0uMDA4LS4xNjguMDEtLjIyMS4wNTUtLjA1My4wNDUtLjA4NC4xMTQtLjA5Mi4yMDZMLjcwNSA0IDAgMy45MzhsLjI1NS0yLjkxMUExLjAxIDEuMDEgMCAwIDEgLjM5My41NzIuOTYyLjk2MiAwIDAgMSAuNjY2LjI4NmEuOTcuOTcgMCAwIDEgLjMzOC0uMTRDMS4xMjIuMTIgMS4yMy4xMSAxLjMyOC4xMTlsMS41OTMuMTRjLjE2LjAxNC4zLjA0Ny40MjMuMWExLjE3IDEuMTcgMCAwIDEgLjU0NS40NDhjLjA2MS4wOTUuMTA5LjE5My4xNDQuMjk1YTEuNDA2IDEuNDA2IDAgMCAxIC4wNzcuNTgzbC0uMDI4LjMyMloiIGZpbGw9IndoaXRlIi8+CiAgPHBhdGggZD0iTTQuMDgyIDIuMDA3YTEuNDU1IDEuNDU1IDAgMCAxLS4wOTguNDI3Yy0uMDUuMTI0LS4xMTQuMjMyLS4xOTIuMzI0YTEuMTMgMS4xMyAwIDAgMS0uMjU0LjIyNyAxLjM1MyAxLjM1MyAwIDAgMS0uNTk1LjIxNGMtLjEuMDEyLS4xOTMuMDE0LS4yOC4wMDZsLTEuNTYtLjEwOC4wMzQtLjQwNi4wMy0uMzQ4IDEuNTU5LjE1NGMuMDkgMCAuMTczLS4wMS4yNDgtLjAzM2EuNjAzLjYwMyAwIDAgMCAuMi0uMTA2LjUzMi41MzIgMCAwIDAgLjEzOS0uMTcyLjY2LjY2IDAgMCAwIC4wNjQtLjI0MWwuMDI5LS4zMjFhLjk0Ljk0IDAgMCAwLS4wMzYtLjI1LjU3LjU3IDAgMCAwLS4xMDMtLjIwMi41MDIuNTAyIDAgMCAwLS4xNjgtLjEzOC42MDUuNjA1IDAgMCAwLS4yNC0uMDY3TDEuMjczLjgyN2MtLjA5NC0uMDA4LS4xNjguMDEtLjIyMS4wNTUtLjA1My4wNDUtLjA4NC4xMTQtLjA5Mi4yMDZMLjcwNSA0IDAgMy45MzhsLjI1NS0yLjkxMUExLjAxIDEuMDEgMCAwIDEgLjM5My41NzIuOTYyLjk2MiAwIDAgMSAuNjY2LjI4NmEuOTcuOTcgMCAwIDEgLjMzOC0uMTRDMS4xMjIuMTIgMS4yMy4xMSAxLjMyOC4xMTlsMS41OTMuMTRjLjE2LjAxNC4zLjA0Ny40MjMuMWExLjE3IDEuMTcgMCAwIDEgLjU0NS40NDhjLjA2MS4wOTUuMTA5LjE5My4xNDQuMjk1YTEuNDA2IDEuNDA2IDAgMCAxIC4wNzcuNTgzbC0uMDI4LjMyMloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" />
-   </a>
-
-</div>
-
 <h2 align="center">
-  <p>Typescript SDK for the Unstructured API</p>
+  <p>TypeScript SDK for the Unstructured API</p>
 </h2>
 
-This is a Typescript client for the [Unstructured API](https://unstructured-io.github.io/unstructured/api.html). 
+This is a HTTP client for the [Unstructured Platform API](https://docs.unstructured.io/platform-api/overview). You can sign up [here](https://unstructured.io/developers) and process 1000 free pages per day for 14 days.
 
-Please refer to the [Unstructured docs](https://docs.unstructured.io/api-reference/api-services/sdk) for a full guide to using the client.
+Please refer to the our documentation for a full guide on integrating the [Partition Endpoint](https://docs.unstructured.io/platform-api/partition-api/sdk-jsts) into your JavaScript/TypeScript code. Support for the [Workflow Endpoint](https://docs.unstructured.io/platform-api/api/overview) is coming soon. 
+
 
 ## SDK Installation
 
@@ -39,6 +31,56 @@ npm install unstructured-client --include=dev
 ```bash
 yarn add unstructured-client --dev
 ```
+
+### Model Context Protocol (MCP) Server
+
+This SDK is also an installable MCP server where the various SDK methods are
+exposed as tools that can be invoked by AI applications.
+
+> Node.js v20 or greater is required to run the MCP server.
+
+<details>
+<summary>Claude installation steps</summary>
+
+Add the following server definition to your `claude_desktop_config.json` file:
+
+```json
+{
+  "mcpServers": {
+    "Unstructured": {
+      "command": "npx",
+      "args": [
+        "-y", "--package", "unstructured-client",
+        "--",
+        "mcp", "start",
+      ]
+    }
+  }
+}
+```
+
+</details>
+
+<details>
+<summary>Cursor installation steps</summary>
+
+Go to `Cursor Settings > Features > MCP Servers > Add new MCP server` and use the following settings:
+
+- Name: Unstructured
+- Type: `command`
+- Command:
+```sh
+npx -y --package unstructured-client -- mcp start
+```
+
+</details>
+
+For a full list of server arguments, run:
+
+```sh
+npx -y --package unstructured-client -- mcp start --help
+```
+
 <!-- No SDK Installation -->
 
 ## SDK Example Usage
@@ -150,7 +192,7 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new UnstructuredClient({ httpClient });
+const sdk = new UnstructuredClient({ httpClient: httpClient });
 ```
 <!-- End Custom HTTP Client [http-client] -->
 
@@ -163,39 +205,40 @@ To change the default retry strategy for a single API call, simply provide a ret
 ```typescript
 import { openAsBlob } from "node:fs";
 import { UnstructuredClient } from "unstructured-client";
-import { ChunkingStrategy, Strategy } from "unstructured-client/sdk/models/shared";
+import {
+  Strategy,
+  VLMModelProvider,
+} from "unstructured-client/sdk/models/shared";
 
-const unstructuredClient = new UnstructuredClient({
-    security: {
-        apiKeyAuth: "YOUR_API_KEY",
-    },
-});
+const unstructuredClient = new UnstructuredClient();
 
 async function run() {
-    const result = await unstructuredClient.general.partition(
-        {
-            partitionParameters: {
-                files: await openAsBlob("./sample-file"),
-                chunkingStrategy: ChunkingStrategy.ByTitle,
-                strategy: Strategy.HiRes,
-            },
-        },
-        {
-            retries: {
-                strategy: "backoff",
-                backoff: {
-                    initialInterval: 1,
-                    maxInterval: 50,
-                    exponent: 1.1,
-                    maxElapsedTime: 100,
-                },
-                retryConnectionErrors: false,
-            },
-        }
-    );
+  const result = await unstructuredClient.general.partition({
+    partitionParameters: {
+      chunkingStrategy: "by_title",
+      files: await openAsBlob("example.file"),
+      splitPdfPageRange: [
+        1,
+        10,
+      ],
+      strategy: Strategy.Auto,
+      vlmModel: "gpt-4o",
+      vlmModelProvider: VLMModelProvider.Openai,
+    },
+  }, {
+    retries: {
+      strategy: "backoff",
+      backoff: {
+        initialInterval: 1,
+        maxInterval: 50,
+        exponent: 1.1,
+        maxElapsedTime: 100,
+      },
+      retryConnectionErrors: false,
+    },
+  });
 
-    // Handle the result
-    console.log(result);
+  console.log(result);
 }
 
 run();
@@ -206,35 +249,40 @@ If you'd like to override the default retry strategy for all operations that sup
 ```typescript
 import { openAsBlob } from "node:fs";
 import { UnstructuredClient } from "unstructured-client";
-import { ChunkingStrategy, Strategy } from "unstructured-client/sdk/models/shared";
+import {
+  Strategy,
+  VLMModelProvider,
+} from "unstructured-client/sdk/models/shared";
 
 const unstructuredClient = new UnstructuredClient({
-    retryConfig: {
-        strategy: "backoff",
-        backoff: {
-            initialInterval: 1,
-            maxInterval: 50,
-            exponent: 1.1,
-            maxElapsedTime: 100,
-        },
-        retryConnectionErrors: false,
+  retryConfig: {
+    strategy: "backoff",
+    backoff: {
+      initialInterval: 1,
+      maxInterval: 50,
+      exponent: 1.1,
+      maxElapsedTime: 100,
     },
-    security: {
-        apiKeyAuth: "YOUR_API_KEY",
-    },
+    retryConnectionErrors: false,
+  },
 });
 
 async function run() {
-    const result = await unstructuredClient.general.partition({
-        partitionParameters: {
-            files: await openAsBlob("./sample-file"),
-            chunkingStrategy: ChunkingStrategy.ByTitle,
-            strategy: Strategy.HiRes,
-        },
-    });
+  const result = await unstructuredClient.general.partition({
+    partitionParameters: {
+      chunkingStrategy: "by_title",
+      files: await openAsBlob("example.file"),
+      splitPdfPageRange: [
+        1,
+        10,
+      ],
+      strategy: Strategy.Auto,
+      vlmModel: "gpt-4o",
+      vlmModelProvider: VLMModelProvider.Openai,
+    },
+  });
 
-    // Handle the result
-    console.log(result);
+  console.log(result);
 }
 
 run();
@@ -265,11 +313,52 @@ client.general.partition({
 }};
 ```
 
+<!-- Start Summary [summary] -->
+## Summary
+
+
+<!-- End Summary [summary] -->
+
+<!-- Start Table of Contents [toc] -->
+## Table of Contents
+<!-- $toc-max-depth=2 -->
+  * [SDK Installation](#sdk-installation)
+  * [SDK Example Usage](#sdk-example-usage)
+  * [Change the base URL](#change-the-base-url)
+  * [Custom HTTP Client](#custom-http-client)
+  * [Retries](#retries)
+  * [Requirements](#requirements)
+  * [Standalone functions](#standalone-functions)
+  * [File uploads](#file-uploads)
+  * [Debugging](#debugging)
+
+<!-- End Table of Contents [toc] -->
+
 <!-- Start Requirements [requirements] -->
 ## Requirements
 
 For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 <!-- End Requirements [requirements] -->
+
+<!-- Start Standalone functions [standalone-funcs] -->
+## Standalone functions
+
+All the methods listed above are available as standalone functions. These
+functions are ideal for use in applications running in the browser, serverless
+runtimes or other environments where application bundle size is a primary
+concern. When using a bundler to build your application, all unused
+functionality will be either excluded from the final bundle or tree-shaken away.
+
+To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
+
+<details>
+
+<summary>Available standalone functions</summary>
+
+- [`generalPartition`](docs/sdks/general/README.md#partition) - Summary
+
+</details>
+<!-- End Standalone functions [standalone-funcs] -->
 
 <!-- Start File uploads [file-upload] -->
 ## File uploads
@@ -288,25 +377,29 @@ Certain SDK methods accept files as part of a multi-part request. It is possible
 ```typescript
 import { openAsBlob } from "node:fs";
 import { UnstructuredClient } from "unstructured-client";
-import { ChunkingStrategy, Strategy } from "unstructured-client/sdk/models/shared";
+import {
+  Strategy,
+  VLMModelProvider,
+} from "unstructured-client/sdk/models/shared";
 
-const unstructuredClient = new UnstructuredClient({
-    security: {
-        apiKeyAuth: "YOUR_API_KEY",
-    },
-});
+const unstructuredClient = new UnstructuredClient();
 
 async function run() {
-    const result = await unstructuredClient.general.partition({
-        partitionParameters: {
-            files: await openAsBlob("./sample-file"),
-            chunkingStrategy: ChunkingStrategy.ByTitle,
-            strategy: Strategy.HiRes,
-        },
-    });
+  const result = await unstructuredClient.general.partition({
+    partitionParameters: {
+      chunkingStrategy: "by_title",
+      files: await openAsBlob("example.file"),
+      splitPdfPageRange: [
+        1,
+        10,
+      ],
+      strategy: Strategy.Auto,
+      vlmModel: "gpt-4o",
+      vlmModelProvider: VLMModelProvider.Openai,
+    },
+  });
 
-    // Handle the result
-    console.log(result);
+  console.log(result);
 }
 
 run();
@@ -319,6 +412,23 @@ run();
 <!-- No Pagination -->
 <!-- No Error Handling -->
 <!-- No Server Selection -->
+
+<!-- Start Debugging [debug] -->
+## Debugging
+
+You can setup your SDK to emit debug logs for SDK requests and responses.
+
+You can pass a logger that matches `console`'s interface as an SDK option.
+
+> [!WARNING]
+> Beware that debug logging will reveal secrets, like API tokens in headers, in log messages printed to a console or files. It's recommended to use this feature only during local development and not in production.
+
+```typescript
+import { UnstructuredClient } from "unstructured-client";
+
+const sdk = new UnstructuredClient({ debugLogger: console });
+```
+<!-- End Debugging [debug] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

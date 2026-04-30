@@ -3,7 +3,7 @@ speakeasyVersion: latest
 sources:
     my-source:
         inputs:
-            - location: https://api.unstructured.io/general/openapi.json
+            - location: https://api.unstructuredapp.io/general/openapi.json
         overlays:
             - location: ./overlay_client.yaml
         registry:
@@ -17,3 +17,5 @@ targets:
                 token: $NPM_TOKEN
         codeSamples:
             output: codeSamples.yaml
+            registry:
+                location: registry.speakeasyapi.dev/unstructured/unstructured5xr/my-source-typescript-code-samples

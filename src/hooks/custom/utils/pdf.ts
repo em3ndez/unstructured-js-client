@@ -66,32 +66,39 @@ export async function getOptimalSplitSize(
  *
  * @param pdf - The PDF file to extract pages from.
  * @param splitSize - The number of pages per split.
+ * @param [pageRangeStart=1] - The starting page of the range to be split (1-based index). Defaults to the first page of the document.
+ * @param [pageRangeEnd=pdf.getPageCount()] - The ending page of the range to be split (1-based index). Defaults to the last page of the document.
  * @returns A promise that resolves to an array of objects containing Blob files and
  * start and end page numbers from the original document.
  */
 export async function splitPdf(
   pdf: PDFDocument,
-  splitSize: number
+  splitSize: number,
+  pageRangeStart?: number,
+  pageRangeEnd?: number
 ): Promise<PdfSplit[]> {
   const pdfSplits: PdfSplit[] = [];
-  const pagesCount = pdf.getPages().length;
+
+  const startPage = pageRangeStart || 1;
+  const endPage = pageRangeEnd || pdf.getPageCount();
+  const pagesCount = endPage - startPage + 1
+
   const numberOfSplits = Math.ceil(pagesCount / splitSize);
 
   for (let i = 0; i < numberOfSplits; ++i) {
     const offset = i * splitSize;
-    const startPage = offset + 1;
-    // If it's the last split, take the rest of the pages
-    const endPage = Math.min(pagesCount, offset + splitSize);
-    const pdfSplit = await pdfPagesToBlob(pdf, startPage, endPage);
-    pdfSplits.push({ content: pdfSplit, startPage, endPage });
+    const splitStartPage = offset + startPage;
+    const splitEndPage = Math.min(endPage, splitStartPage + splitSize - 1);
+
+    const pdfSplit = await pdfPagesToBlob(pdf, splitStartPage, splitEndPage);
+    pdfSplits.push({ content: pdfSplit, startPage: splitStartPage, endPage: splitEndPage });
   }
 
   return pdfSplits;
 }
 
 /**
- * Checks if the given file is a PDF. First it checks the `.pdf` file extension, then
- * it tries to load the file as a PDF using the `PDFDocument.load` method.
+ * Checks if the given file is a PDF by loading the file as a PDF using the `PDFDocument.load` method.
  * @param file - The file to check.
  * @returns A promise that resolves to three values, first is a boolean representing
  * whether there was an error during PDF load, second is a PDFDocument object or null
@@ -101,8 +108,7 @@ export async function splitPdf(
 export async function loadPdf(
   file: File | null
 ): Promise<[boolean, PDFDocument | null, number]> {
-  if (!file?.name.endsWith(".pdf")) {
-    console.info("Given file is not a PDF, so splitting is not enabled.");
+  if (!file) {
     return [true, null, 0];
   }
 
@@ -112,10 +118,6 @@ export async function loadPdf(
     const pagesCount = pdf.getPages().length;
     return [false, pdf, pagesCount];
   } catch (e) {
-    console.error(e);
-    console.warn(
-      "Attempted to interpret file as pdf, but error arose when splitting by pages. Reverting to non-split pdf handling path."
-    );
     return [true, null, 0];
   }
 }

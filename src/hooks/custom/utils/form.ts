@@ -3,6 +3,7 @@ import {
   DEFAULT_STARTING_PAGE_NUMBER,
   MAX_NUMBER_OF_PARALLEL_REQUESTS, PARTITION_FORM_SPLIT_PDF_ALLOW_FAILED_KEY,
   PARTITION_FORM_SPLIT_PDF_CONCURRENCY_LEVEL,
+  PARTITION_FORM_SPLIT_PDF_PAGE_RANGE_KEY,
   PARTITION_FORM_STARTING_PAGE_NUMBER_KEY,
 } from "../common.js";
 
@@ -79,6 +80,31 @@ function getBooleanParameter(
 }
 
 /**
+ * Retrieves and validates a page range from FormData, ensuring that the start and end values are defined and within bounds.
+ *
+ * @param formData - The FormData object containing the page range parameter.
+ * @param maxPages - The maximum number of pages in the document.
+ * @returns {[number, number]} - A tuple containing the validated start and end page numbers.
+ *
+ * @throws Will throw an error if the page range is invalid or out of bounds.
+ */
+export function getSplitPdfPageRange(formData: FormData, maxPages: number): [number, number] {
+  const formDataParameter = formData.get(PARTITION_FORM_SPLIT_PDF_PAGE_RANGE_KEY);
+  const pageRange = String(formDataParameter).split(",").map(Number)
+
+  const start = pageRange[0] || 1;
+  const end = pageRange[1] || maxPages;
+
+  if (!(start > 0 && start <= maxPages) || !(end > 0 && end <= maxPages) || !(start <= end)) {
+    const msg = `Page range (${start} to ${end}) is out of bounds. Values should be between 1 and ${maxPages}.`;
+    console.error(msg);
+    throw new Error(msg);
+  }
+
+  return [start, end];
+}
+
+/**
  * Gets the number of maximum requests that can be made when splitting PDF.
  * - The number of maximum requests is determined by the value of the request parameter
  * `split_pdf_thread`.
@@ -109,13 +135,6 @@ export function getSplitPdfConcurrencyLevel(formData: FormData): number {
     );
     splitPdfConcurrencyLevel = DEFAULT_NUMBER_OF_PARALLEL_REQUESTS;
   }
-
-  console.info(
-    `Splitting PDF by page on client. Using ${splitPdfConcurrencyLevel} threads when calling API.`
-  );
-  console.info(
-    `Set ${PARTITION_FORM_SPLIT_PDF_CONCURRENCY_LEVEL} parameter if you want to change that.`
-  );
   return splitPdfConcurrencyLevel;
 }
 
@@ -138,25 +157,6 @@ export function getSplitPdfAllowFailed(formData: FormData): boolean {
     formData,
     PARTITION_FORM_SPLIT_PDF_ALLOW_FAILED_KEY,
     DEFAULT_SPLIT_PDF_ALLOW_FAILED_KEY
-  );
-
-
-  if (splitPdfAllowFailed) {
-    console.info(
-    `Running split PDF requests in parallel with no-strict mode - 
-      the failed requests will not stop the process, and the resulting elements might miss
-      some pages in case of failure.`
-    );
-  } else {
-    console.info(
-    `Running split PDF requests in parallel with strict mode - 
-      the failed requests will stop the process, and the resulting elements will have all pages
-      or error out.`
-    )
-  }
-
-  console.info(
-    `Set ${PARTITION_FORM_SPLIT_PDF_CONCURRENCY_LEVEL} parameter if you want to change that.`
   );
   return splitPdfAllowFailed;
 }

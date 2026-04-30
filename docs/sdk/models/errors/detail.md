@@ -6,12 +6,20 @@
 ### `shared.ValidationError[]`
 
 ```typescript
-const value: shared.ValidationError[] = /* values here */
+const value: shared.ValidationError[] = [
+  {
+    loc: [
+      "<value>",
+    ],
+    msg: "<value>",
+    type: "<value>",
+  },
+];
 ```
 
 ### `string`
 
 ```typescript
-const value: string = /* values here */
+const value: string = "<value>";
 ```
 

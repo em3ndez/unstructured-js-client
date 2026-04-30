@@ -2,7 +2,7 @@ PACKAGE_NAME := unstructured-js-client
 CURRENT_DIR := $(shell pwd)
 ARCH := $(shell uname -m)
 DOCKER_IMAGE ?= quay.io/unstructured-io/unstructured-api:latest
-OPENAPI_DOCS_URL ?= https://api.unstructured.io/general/openapi.json
+OPENAPI_DOCS_URL ?= https://api.unstructuredapp.io/general/openapi.json
 
 ###########
 # Install #
@@ -22,6 +22,11 @@ install:
 build:
 	npm run build
 
+## check:					lint the client
+.PHONY: check
+check:
+	npx eslint src/
+
 #############
 # Test 		#
 #############
@@ -29,12 +34,12 @@ build:
 ## test-unit:					run unit tests
 .PHONY: test-unit
 test-unit:
-	npx jest --detectOpenHandles --config jest.config.js test/unit
+	npx vitest --dir test/unit --run --reporter verbose --config vitest.config.mjs
 
 ## test-integration:			run integration tests
 .PHONY: test-integration
 test-integration:
-	npx jest --detectOpenHandles --config jest.config.js test/integration
+	npx vitest --dir test/integration --run --reporter verbose --config vitest.config.mjs
 
 ## test:					run all tests
 .PHONY: test

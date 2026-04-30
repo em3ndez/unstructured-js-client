@@ -12,6 +12,10 @@ permissions:
   id-token: write
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test_unit:
     runs-on: ubuntu-latest
@@ -25,6 +29,10 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: make install
+      - name: Build dependencies
+        run: make build
+      - name: Run linter
+        run: make check
       - name: Run unit tests
         run: make test-unit
     
@@ -46,5 +54,7 @@ jobs:
         node-version: 18
     - name: Install dependencies
       run: make install
+    - name: Build dependencies
+      run: make build
     - name: Run integration tests
       run: make test-integration

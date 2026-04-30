@@ -2,25 +2,29 @@
 ```typescript
 import { openAsBlob } from "node:fs";
 import { UnstructuredClient } from "unstructured-client";
-import { ChunkingStrategy, Strategy } from "unstructured-client/sdk/models/shared";
+import {
+  Strategy,
+  VLMModelProvider,
+} from "unstructured-client/sdk/models/shared";
 
-const unstructuredClient = new UnstructuredClient({
-    security: {
-        apiKeyAuth: "YOUR_API_KEY",
-    },
-});
+const unstructuredClient = new UnstructuredClient();
 
 async function run() {
-    const result = await unstructuredClient.general.partition({
-        partitionParameters: {
-            files: await openAsBlob("./sample-file"),
-            chunkingStrategy: ChunkingStrategy.ByTitle,
-            strategy: Strategy.HiRes,
-        },
-    });
+  const result = await unstructuredClient.general.partition({
+    partitionParameters: {
+      chunkingStrategy: "by_title",
+      files: await openAsBlob("example.file"),
+      splitPdfPageRange: [
+        1,
+        10,
+      ],
+      strategy: Strategy.Auto,
+      vlmModel: "gpt-4o",
+      vlmModelProvider: VLMModelProvider.Openai,
+    },
+  });
 
-    // Handle the result
-    console.log(result);
+  console.log(result);
 }
 
 run();
